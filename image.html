@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative; 
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: auto;
+        }
+        nav {
+            background-color: #666;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Klncelogo.gif" alt="Logo">
+        <a href="./index.html">back</a>
+    </nav>
+    <div class="gallery">
+        <img src="https://images.shiksha.com/mediadata/images/1544603022phptrjHAW.png" alt="Photo 1">
+        <img src="https://www.collegebatch.com/static/clg-gallery/kln-college-of-engineering-sivaganga-255226.jpg" alt="Photo 2">
+        <img src="https://www.klnce.edu/Resources/Images/Canteen/Canteen1.gif" alt="Photo 3">
+        <img src="https://www.klnce.edu/photogallery/AnnualDay2013/images/Annualday2019/AVR_9131.JPG" alt="Photo 4">
+        <img src="https://www.collegebatch.com/static/clg-gallery/kln-college-of-information-technology-sivaganga-271889.jpg" alt="Photo 5">
+        <img src="https://www.klnce.edu/Resources/Images/Library/Ref1.gif" alt="Photo 6">
+        <!-- Add more images here -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
